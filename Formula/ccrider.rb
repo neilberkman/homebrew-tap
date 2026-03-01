@@ -5,21 +5,21 @@
 class Ccrider < Formula
   desc "Search, browse, and resume your Claude Code sessions"
   homepage "https://github.com/neilberkman/ccrider"
-  version "1.1.0"
+  version "1.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/neilberkman/ccrider/releases/download/v1.1.0/ccrider_1.1.0_darwin_amd64.tar.gz"
-      sha256 "762533d667bcd05129c465d3301ff372ba75d9bec49c36213501405a4724bdcd"
+      url "https://github.com/neilberkman/ccrider/releases/download/v1.1.1/ccrider_1.1.1_darwin_amd64.tar.gz"
+      sha256 "1eef6b0ec74e63e86a6f89dd76cf4d4392eb58dfcf8deae60af749bc6a6de863"
 
       define_method(:install) do
         bin.install "ccrider"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/neilberkman/ccrider/releases/download/v1.1.0/ccrider_1.1.0_darwin_arm64.tar.gz"
-      sha256 "e11f9e7ffcf75d0f446fb61f64e6e80f3068dc8aa60155e1833a53965fe63d86"
+      url "https://github.com/neilberkman/ccrider/releases/download/v1.1.1/ccrider_1.1.1_darwin_arm64.tar.gz"
+      sha256 "b5fa337c87a24fdf57e608934d96765d25743d728ed3211e8dc02e7355ec29c4"
 
       define_method(:install) do
         bin.install "ccrider"
@@ -29,15 +29,15 @@ class Ccrider < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neilberkman/ccrider/releases/download/v1.1.0/ccrider_1.1.0_linux_amd64.tar.gz"
-      sha256 "c062b3cbc2244b08ed57b636b7dd55b498f422592be6f6387202617ec119c94a"
+      url "https://github.com/neilberkman/ccrider/releases/download/v1.1.1/ccrider_1.1.1_linux_amd64.tar.gz"
+      sha256 "8021aca716217e5567224acf54821b66e9cf60c7e549331275897dad940b77f9"
       define_method(:install) do
         bin.install "ccrider"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/neilberkman/ccrider/releases/download/v1.1.0/ccrider_1.1.0_linux_arm64.tar.gz"
-      sha256 "8e1ab3fd72d5caa98b2213ec554d712c8aaff000a96e3450e652a95a14d7ffbb"
+      url "https://github.com/neilberkman/ccrider/releases/download/v1.1.1/ccrider_1.1.1_linux_arm64.tar.gz"
+      sha256 "05501daf87037ff2a3f0badd314228f8da0fbd1d5abb3ec5e2731e83cd71d518"
       define_method(:install) do
         bin.install "ccrider"
       end
